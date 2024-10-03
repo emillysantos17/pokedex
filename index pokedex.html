@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <title>Pokédex de Alola</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .pokemon-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .pokemon-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            width: 150px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .pokemon-card img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Pokédex de Alola</h1>
+
+<div class="pokemon-container">
+    
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/rowlet.png" alt="Rowlet">
+        <h2> Rowlet</h2>
+        <p>Tipo: Grama/Voador</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/dartrix.png" alt="Dartrix">
+        <h2> Dartrix</h2>
+        <p>Tipo: Grama/Voador</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/decidueye.png" alt="Decidueye">
+        <h2> Decidueye</h2>
+        <p>Tipo: Grama/Fantasma</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/litten.png" alt="Litten">
+        <h2> Litten</h2>
+        <p>Tipo: Fogo</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/torracat.png" alt="Torracat">
+        <h2>Torracat</h2>
+        <p>Tipo: Fogo</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/incineroar.png" alt="Incineroar">
+        <h2> Incineroar</h2>
+        <p>Tipo: Fogo/Noturno</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/popplio.png" alt="Popplio">
+        <h2> Popplio</h2>
+        <p>Tipo: Água</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/brionne.png" alt="Brionne">
+        <h2> Brionne</h2>
+        <p>Tipo: Água</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/primarina.png" alt="Primarina">
+        <h2> Primarina</h2>
+        <p>Tipo: Água/Fada</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/pikipek.png" alt="Pikipek">
+        <h2> Pikipek</h2>
+        <p>Tipo: Normal/Voador</p>
+    </div>
+    
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/trumbeak.png" alt="Trumbeak">
+        <h2>Trumbeak</h2>
+        <p>Tipo: Normal/Voador</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/toucannon.png" alt="Toucannon">
+        <h2>Toucannon</h2>
+        <p>Tipo: Normal/Voador</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/yungoos.png" alt="Yungoos">
+        <h2>Yungoos</h2>
+        <p>Tipo: Normal</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/gumshoos.png" alt="Gumshoos">
+        <h2>Gumshoos</h2>
+        <p>Tipo: Normal</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/grubbin.png" alt="Grubbin">
+        <h2>Grubbin</h2>
+        <p>Tipo: Inseto</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/charjabug.png" alt="Charjabug">
+        <h2>Charjabug</h2>
+        <p>Tipo: Inseto/Elétrico</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/vikavolt.png" alt="Vikavolt">
+        <h2>Vikavolt</h2>
+        <p>Tipo: Inseto/Elétrico</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/crabrawler.png" alt="Crabrawler">
+        <h2>Crabrawler</h2>
+        <p>Tipo: Lutador</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/crabominable.png" alt="Crabominable">
+        <h2>Crabominable</h2>
+        <p>Tipo: Lutador/Gelo</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/oricorio-baile.png" alt="Oricorio (Estilo Baile)">
+        <h2>Oricorio (Estilo Baile)</h2>
+        <p>Tipo: Fogo/Voador</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/oricorio-pom-pom.png" alt="Oricorio (Estilo Pom-Pom)">
+        <h2>Oricorio (Estilo Pom-Pom)</h2>
+        <p>Tipo: Elétrico/Voador</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/oricorio-pau.png" alt="Oricorio (Estilo Pau)">
+        <h2>Oricorio (Estilo Pau)</h2>
+        <p>Tipo: Psíquico/Voador</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/oricorio-sensu.png" alt="Oricorio (Estilo Sensu)">
+        <h2>Oricorio (Estilo Sensu)</h2>
+        <p>Tipo: Fantasma/Voador</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/cutiefly.png" alt="Cutiefly">
+        <h2>Cutiefly</h2>
+        <p>Tipo: Inseto/Fada</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/ribombee.png" alt="Ribombee">
+        <h2>Ribombee</h2>
+        <p>Tipo: Inseto/Fada</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/rockruff.png" alt="Rockruff">
+        <h2>Rockruff</h2>
+        <p>Tipo: Rocha</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/lycanroc-midday.png" alt="Lycanroc (Forma Diurna)">
+        <h2> Lycanroc (Forma Diurna)</h2>
+        <p>Tipo: Rocha</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/lycanroc-midnight.png" alt="Lycanroc (Forma Noturna)">
+        <h2>Lycanroc (Forma Noturna)</h2>
+        <p>Tipo: Rocha</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/lycanroc-dusk.png" alt="Lycanroc (Forma Crepúsculo)">
+        <h2>Lycanroc (Forma Crepúsculo)</h2>
+        <p>Tipo: Rocha</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/wishiwashi.png" alt="Wishiwashi (Forma Solo)">
+        <h2>Wishiwashi (Forma Solo)</h2>
+        <p>Tipo: Água</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/wishiwashi-school.png" alt="Wishiwashi (Forma Cardume)">
+        <h2> Wishiwashi (Forma Cardume)</h2>
+        <p>Tipo: Água</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/mareanie.png" alt="Mareanie">
+        <h2>Mareanie</h2>
+        <p>Tipo: Água/Venenoso</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/toxapex.png" alt="Toxapex">
+        <h2>Toxapex</h2>
+        <p>Tipo: Água/Venenoso</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/mudbray.png" alt="Mudbray">
+        <h2>Mudbray</h2>
+        <p>Tipo: Terra</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/mudsdale.png" alt="Mudsdale">
+        <h2>Mudsdale</h2>
+        <p>Tipo: Terra</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/dewpider.png" alt="Dewpider">
+        <h2>Dewpider</h2>
+        <p>Tipo: Água/Insecto</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/araquanid.png" alt="Araquanid">
+        <h2>Araquanid</h2>
+        <p>Tipo: Água/Insecto</p>
+    </div>
+    
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/tapu-koko.png" alt="Tapu Koko">
+        <h2> Tapu Koko</h2>
+        <p>Tipo: Elétrico/Fada</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/tapu-lele.png" alt="Tapu Lele">
+        <h2> Tapu Lele</h2>
+        <p>Tipo: Psíquico/Fada</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/tapu-bulu.png" alt="Tapu Bulu">
+        <h2>Tapu Bulu</h2>
+        <p>Tipo: Grama/Fada</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/tapu-fini.png" alt="Tapu Fini">
+        <h2>Tapu Fini</h2>
+        <p>Tipo: Água/Fada</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/zeraora.png" alt="Zeraora">
+        <h2>Zeraora</h2>
+        <p>Tipo: Elétrico</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/fomantis.png" alt="Fomantis">
+        <h2>Fomantis</h2>
+        <p>Tipo: Grama</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/lurantis.png" alt="Lurantis">
+        <h2>Lurantis</h2>
+        <p>Tipo: Grama</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/morelull.png" alt="Morelull">
+        <h2>Morelull</h2>
+        <p>Tipo: Grama/Fada</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/shiinotic.png" alt="Shiinotic">
+        <h2>Shiinotic</h2>
+        <p>Tipo: Grama/Fada</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/salandit.png" alt="Salandit">
+        <h2>Salandit</h2>
+        <p>Tipo: Venenoso/Fogo</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/salazzle.png" alt="Salazzle">
+        <h2>Salazzle</h2>
+        <p>Tipo: Venenoso/Fogo</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/stufful.png" alt="Stufful">
+        <h2>Stufful</h2>
+        <p>Tipo: Normal/Lutador</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/bewear.png" alt="Bewear">
+        <h2>Bewear</h2>
+        <p>Tipo: Normal/Lutador</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/bounsweet.png" alt="Bounsweet">
+        <h2>Bounsweet</h2>
+        <p>Tipo: Grama</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/steenee.png" alt="Steenee">
+        <h2>Steenee</h2>
+        <p>Tipo: Grama</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/tsareena.png" alt="Tsareena">
+        <h2>Tsareena</h2>
+        <p>Tipo: Grama</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/comfey.png" alt="Comfey">
+        <h2>Comfey</h2>
+        <p>Tipo: Fada</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/oranguru.png" alt="Oranguru">
+        <h2>Oranguru</h2>
+        <p>Tipo: Normal/Psíquico</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/passimian.png" alt="Passimian">
+        <h2>Passimian</h2>
+        <p>Tipo: Lutador</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/wimpod.png" alt="Wimpod">
+        <h2>Wimpod</h2>
+        <p>Tipo: Inseto/Água</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/golisopod.png" alt="Golisopod">
+        <h2>Golisopod</h2>
+        <p>Tipo: Inseto/Água</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/sandygast.png" alt="Sandygast">
+        <h2>Sandygast</h2>
+        <p>Tipo: Fantasma/Terra</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/palossand.png" alt="Palossand">
+        <h2>Palossand</h2>
+        <p>Tipo: Fantasma/Terra</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/pyukumuku.png" alt="Pyukumuku">
+        <h2>Pyukumuku</h2>
+        <p>Tipo: Água</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/type-null.png" alt="Type: Null">
+        <h2>Type: Null</h2>
+        <p>Tipo: Normal</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/silvally.png" alt="Silvally">
+        <h2>Silvally</h2>
+        <p>Tipo: Normal</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/minior.png" alt="Minior">
+        <h2>Minior</h2>
+        <p>Tipo: Rocha/Voador</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/komala.png" alt="Komala">
+        <h2>Komala</h2>
+        <p>Tipo: Normal</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/turtonator.png" alt="Turtonator">
+        <h2>Turtonator</h2>
+        <p>Tipo: Fogo/Dragão</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/togedemaru.png" alt="Togedemaru">
+        <h2>Togedemaru</h2>
+        <p>Tipo: Elétrico/Aço</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/mimikyu.png" alt="Mimikyu">
+        <h2>Mimikyu</h2>
+        <p>Tipo: Fantasma/Fada</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/bruxish.png" alt="Bruxish">
+        <h2>Bruxish</h2>
+        <p>Tipo: Água/Psíquico</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/drampa.png" alt="Drampa">
+        <h2>#065 Drampa</h2>
+        <p>Tipo: Normal/Dragão</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/dhelmise.png" alt="Dhelmise">
+        <h2>Dhelmise</h2>
+        <p>Tipo: Fantasma/Grama</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/jangmo-o.png" alt="Jangmo-o">
+        <h2>Jangmo-o</h2>
+        <p>Tipo: Dragão</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/hakamo-o.png" alt="Hakamo-o">
+        <h2>Hakamo-o</h2>
+        <p>Tipo: Dragão/Lutador</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/kommo-o.png" alt="Kommo-o">
+        <h2>Kommo-o</h2>
+        <p>Tipo: Dragão/Lutador</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/tapu-koko.png" alt="Tapu Koko">
+        <h2>Tapu Koko</h2>
+        <p>Tipo: Elétrico/Fada</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/tapu-lele.png" alt="Tapu Lele">
+        <h2>Tapu Lele</h2>
+        <p>Tipo: Psíquico/Fada</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/tapu-bulu.png" alt="Tapu Bulu">
+        <h2>Tapu Bulu</h2>
+        <p>Tipo: Grama/Fada</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/tapu-fini.png" alt="Tapu Fini">
+        <h2>Tapu Fini</h2>
+        <p>Tipo: Água/Fada</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/cosmog.png" alt="Cosmog">
+        <h2>Cosmog</h2>
+        <p>Tipo: Psíquico</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/cosmoem.png" alt="Cosmoem">
+        <h2>Cosmoem</h2>
+        <p>Tipo: Psíquico</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/solgaleo.png" alt="Solgaleo">
+        <h2>Solgaleo</h2>
+        <p>Tipo: Psíquico/Aço</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/lunala.png" alt="Lunala">
+        <h2>Lunala</h2>
+        <p>Tipo: Psíquico/Fantasma</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/nihilego.png" alt="Nihilego">
+        <h2>Nihilego</h2>
+        <p>Tipo: Pedra/Venenoso</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/buzzwole.png" alt="Buzzwole">
+        <h2>Buzzwole</h2>
+        <p>Tipo: Inseto/Lutador</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/pheromosa.png" alt="Pheromosa">
+        <h2>Pheromosa</h2>
+        <p>Tipo: Inseto/Lutador</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/xurkitree.png" alt="Xurkitree">
+        <h2>Xurkitree</h2>
+        <p>Tipo: Elétrico</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/celesteela.png" alt="Celesteela">
+        <h2>Celesteela</h2>
+        <p>Tipo: Aço/Voador</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/kartana.png" alt="Kartana">
+        <h2>Kartana</h2>
+        <p>Tipo: Aço/Grama</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/guzzlord.png" alt="Guzzlord">
+        <h2>Guzzlord</h2>
+        <p>Tipo: Sombrio/Dragão</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/necrozma.png" alt="Necrozma">
+        <h2>Necrozma</h2>
+        <p>Tipo: Psíquico</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/magearna.png" alt="Magearna">
+        <h2>Magearna</h2>
+        <p>Tipo: Aço/Fada</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/marshadow.png" alt="Marshadow">
+        <h2>Marshadow</h2>
+        <p>Tipo: Lutador/Fantasma</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/poipole.png" alt="Poipole">
+        <h2>Poipole</h2>
+        <p>Tipo: Venenoso</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/naganadel.png" alt="Naganadel">
+        <h2>Naganadel</h2>
+        <p>Tipo: Venenoso/Dragão</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/stakataka.png" alt="Stakataka">
+        <h2> Stakataka</h2>
+        <p>Tipo: Pedra/Aço</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/blacephalon.png" alt="Blacephalon">
+        <h2>Blacephalon</h2>
+        <p>Tipo: Fogo/Fantasma</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/zeraora.png" alt="Zeraora">
+        <h2> Zeraora</h2>
+        <p>Tipo: Elétrico</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/meltan.png" alt="Meltan">
+        <h2>Meltan</h2>
+        <p>Tipo: Aço</p>
+    </div>
+    <div class="pokemon-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/melmetal.png" alt="Melmetal">
+        <h2>Melmetal</h2>
+        <p>Tipo: Aço</p>
+    </div>
+
+</body>
+</html>
